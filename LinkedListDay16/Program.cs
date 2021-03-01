@@ -60,6 +60,10 @@ namespace LinkedListDay16
             list.InsertLast(70);
             list.AddNodeAtMiddle(40, 30);
             list.Display();
+
+            list.Display();
+            list.DeleteNodeWithValue(40);
+            list.Display();
         }
            
     }

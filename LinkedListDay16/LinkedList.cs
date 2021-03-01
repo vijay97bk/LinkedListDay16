@@ -144,5 +144,36 @@ namespace LinkedListDay16
             }
             return true;
         }
+        /// <summary>
+        /// Deletes the node with value.UC9
+        /// </summary>
+        /// <param name="value">The value.</param>
+        public void DeleteNodeWithValue(int value)
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Nothing to delete");
+            }
+            Node prev = this.head;
+            Node FindValue = this.head;
+            while (FindValue.data != value)
+            {
+                if (FindValue == null)
+                {
+                    break;
+                }
+                FindValue = FindValue.next;
+            }
+            while (prev.next.data != value)
+            {
+                if (prev == null)
+                {
+                    break;
+                }
+                prev = prev.next;
+            }
+            prev.next = FindValue.next;
+
+        }
     }
 }
