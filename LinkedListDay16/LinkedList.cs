@@ -23,7 +23,7 @@ namespace LinkedListDay16
             else
             {
                 Node lastNode = GetLastNode();
-                lastNode.next = newNode;// changing the next pointer 
+                lastNode.next = newNode;
             }
             Console.WriteLine("Inserted Into list " + newNode.data);
             return newNode;
@@ -66,6 +66,31 @@ namespace LinkedListDay16
         public void Append(int newData)
         {
             InsertLast(newData);
+        }
+        /// <summary>
+        /// Adds the node after node. UC4
+        /// </summary>
+        /// <param name="newData">The new data.</param>
+        /// <param name="addAfterNode">The add after node.</param>
+        public void AddNodeAtMiddle(int newData, int addAfterNode)
+        {
+            Node newNode = new Node(newData);
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else
+            {
+                Node temp = head;
+                while (temp.data != addAfterNode)
+                {
+                    temp = temp.next;
+                }
+                newNode.next = temp.next;
+                temp.next = newNode;
+
+            }
+            Console.WriteLine("Added in between Node: " + newData);
         }
     }
 }
