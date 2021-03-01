@@ -92,5 +92,21 @@ namespace LinkedListDay16
             }
             Console.WriteLine("Added in between Node: " + newData);
         }
+        /// <summary>
+        /// Deletes the node at first. UC5
+        /// </summary>
+        public void DeleteNodeAtFirst()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Nothing to delete");
+                return;
+            }
+
+            Node temp = this.head;
+            this.head = this.head.next;
+
+            Console.WriteLine("Removed from linkedlist :" + temp.data);
+        }
     }
 }

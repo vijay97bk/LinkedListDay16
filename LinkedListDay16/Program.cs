@@ -25,11 +25,15 @@ namespace LinkedListDay16
             list.Append(30);
             list.Append(70);
             list.Display();
-
+            //insert at middle UC4
             LinkedList listAtMiddle = new LinkedList();
             listAtMiddle.InsertLast(56);
             listAtMiddle.InsertLast(70);
             listAtMiddle.AddNodeAtMiddle(30, 56);
+            listAtMiddle.Display();
+            //UC5 delete node at first
+            listAtMiddle.Display();
+            listAtMiddle.DeleteNodeAtFirst();
             listAtMiddle.Display();
         }
            
