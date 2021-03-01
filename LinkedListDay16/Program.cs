@@ -53,6 +53,13 @@ namespace LinkedListDay16
                 Console.WriteLine("Node found");
             else
                 Console.WriteLine("Node not found");
+
+            //Add node after a node UC8
+            list.InsertLast(56);
+            list.InsertLast(30);
+            list.InsertLast(70);
+            list.AddNodeAtMiddle(40, 30);
+            list.Display();
         }
            
     }
