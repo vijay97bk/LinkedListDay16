@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace LinkedListDay16
 {
@@ -6,7 +8,15 @@ namespace LinkedListDay16
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome to Linked List");
+            LinkedList list = new LinkedList();
+            list.InsertLast(56);
+            list.InsertLast(30);
+            list.InsertLast(70);
+
+            list.Display();
+
+            
         }
     }
 }
