@@ -61,9 +61,17 @@ namespace LinkedListDay16
             list.AddNodeAtMiddle(40, 30);
             list.Display();
 
+            //Delete perticular node
             list.Display();
             list.DeleteNodeWithValue(40);
             list.Display();
+
+            Sorting sort = new Sorting();
+            sort.AddNode(56);
+            sort.AddNode(30);
+            sort.AddNode(40);
+            sort.AddNode(70);
+            sort.Display();
         }
            
     }
