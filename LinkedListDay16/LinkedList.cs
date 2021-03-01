@@ -28,6 +28,7 @@ namespace LinkedListDay16
             Console.WriteLine("Inserted Into list " + newNode.data);
             return newNode;
         }
+
         public Node GetLastNode()
         {
             Node last = this.head;
@@ -107,6 +108,23 @@ namespace LinkedListDay16
             this.head = this.head.next;
 
             Console.WriteLine("Removed from linkedlist :" + temp.data);
+        }
+        /// <summary>
+        /// Deletes the node at last. UC6
+        /// </summary>
+        public void DeleteLastNode()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Nothing To Delete");
+                return;
+            }
+            Node temp = head;
+            while (temp.next.next != null)
+            {
+                temp = temp.next;
+            }
+            temp.next = null;
         }
     }
 }

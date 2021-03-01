@@ -35,6 +35,10 @@ namespace LinkedListDay16
             listAtMiddle.Display();
             listAtMiddle.DeleteNodeAtFirst();
             listAtMiddle.Display();
+            //UC6 Delet Last node
+            list.Display();
+            list.DeleteLastNode();
+            list.Display();
         }
            
     }
