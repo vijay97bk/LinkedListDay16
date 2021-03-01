@@ -39,6 +39,20 @@ namespace LinkedListDay16
             list.Display();
             list.DeleteLastNode();
             list.Display();
+
+            //Searchin node UC7
+            LinkedList searchList = new LinkedList();
+            Node node56 = new Node(56);
+            Node node30 = new Node(30);
+            Node node70 = new Node(70);
+            node56.next = node30;
+            node30.next = node70;
+            searchList.head = node56;
+            searchList.Display();
+            if (searchList.Search(30))
+                Console.WriteLine("Node found");
+            else
+                Console.WriteLine("Node not found");
         }
            
     }

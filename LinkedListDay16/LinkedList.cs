@@ -126,5 +126,23 @@ namespace LinkedListDay16
             }
             temp.next = null;
         }
+        /// <summary>
+        /// Searches the specified value. UC7
+        /// </summary>
+        /// <param name="value">The value.</param>
+        /// <returns></returns>
+        public bool Search(int value)
+        {
+            Node temp = this.head;
+            while (temp != null)
+            {
+                if (temp.data == value)
+                {
+                    return true;
+                }
+                temp = temp.next;
+            }
+            return true;
+        }
     }
 }
