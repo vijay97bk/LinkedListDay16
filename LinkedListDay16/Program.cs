@@ -16,7 +16,10 @@ namespace LinkedListDay16
 
             list.Display();
 
-            
+            list.InsertFront(70);
+            list.InsertFront(30);
+            list.InsertFront(56);
+            list.Display();
         }
     }
 }

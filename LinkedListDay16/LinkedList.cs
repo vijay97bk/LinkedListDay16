@@ -56,5 +56,16 @@ namespace LinkedListDay16
             }
             return listdata;
         }
+        public void InsertFront(int newData)
+        {
+            Node newNode = new Node(newData);
+            newNode.next = this.head;
+            this.head = newNode;
+            Console.WriteLine("Inserted at front:" + newData);
+        }
+        public void Append(int newData)
+        {
+            InsertLast(newData);
+        }
     }
 }
